@@ -7,8 +7,7 @@ O projeto está organizado da seguinte maneira:
 
 
 ### bradesco_autoextrato/
-Esta pasta contém o código fonte do projeto. O arquivo `bradesco_autoextrato.py` é o script principal que executa o Selenium e baixa o extrato bancário. O arquivo `utils.py` contém funções auxiliares para lidar com as operações de arquivo e log. O arquivo `secrets.py` contém configurações das variáveis de ambiente. O arquivo `bradesco_exceptions.py` contém classes de exceção específicas do módulo `bradesco_autoestrato.py`
-
+Esta pasta contém o código fonte do projeto. O arquivo `bradesco_autoextrato.py` é o script principal que executa o Selenium e baixa o extrato bancário.
 ### .gitignore
 Este arquivo contém uma lista de arquivos e pastas que serão ignorados pelo Git durante o controle de versão.
 
