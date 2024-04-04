@@ -2,10 +2,6 @@
 
 Este projeto em Python utiliza o Selenium para automatizar o processo de baixar o extrato bancário do Bradesco a cada 20 minutos. Ele economiza tempo e esforço ao evitar a necessidade de fazer login manualmente e baixar o extrato repetidamente. Pode ser usado para monitorar finanças de forma eficiente e manter um controle regular das transações bancárias.
 
-## Estrutura do Projeto
-O projeto está organizado da seguinte maneira:
-
-
 ### bradesco_autoextrato/
 Esta pasta contém o código fonte do projeto. O arquivo `bradesco_autoextrato.py` é o script principal que executa o Selenium e baixa o extrato bancário.
 ### .gitignore
