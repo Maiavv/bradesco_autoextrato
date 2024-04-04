@@ -52,39 +52,3 @@ Este arquivo contém a lista de dependências do projeto, que devem ser instalad
 
 ### setup.py
 Este arquivo contém as informações de configuração do pacote Python, incluindo a versão, autor e dependências.
-
-## Como Usar
-
-### 1. Clonando o repositório
-Para utilizar o Bradesco-Auto-Extrato, você precisará clonar o repositório para o seu computador:
-```shell
-git clone https://github.com/LSBlrti/Bradesco-Extrato-Bancario-Automatico.git
-```
-
-### 2. Instalando as dependências
-As dependências do projeto podem ser instaladas utilizando o pip, executando o seguinte comando na pasta raiz do projeto:
-```shell
-pip install -r requirements.txt
-```
-
-### 3. Configurando as informações de login
-As informações de login do Bradesco e outras configurações necessárias devem ser configuradas como variáveis de ambiente em um servidor ou em uma ferramenta de gerenciamento de segredos. Para isso, é necessário criar as seguintes variáveis de ambiente:
-
-- `BRADESCO_USER`: Nome de usuário da conta bancária do Bradesco.
-- `BRADESCO_PASS`: Senha da conta bancária do Bradesco.
-- `BRADESCO_AGENCY`: Número da agência bancária do Bradesco.
-- `BRADESCO_ACCOUNT`: Número da conta bancária do Bradesco.
-- `DOWNLOAD_PATH`: Caminho absoluto onde os extratos serão salvos.
-Observação: As variáveis de ambiente podem ser definidas de diferentes maneiras, dependendo do sistema operacional ou ferramenta de gerenciamento de segredos que você está usando. Consulte a documentação correspondente para saber como definir as variáveis de ambiente.
-
-### 4. Executando o script
-O script principal do projeto é o `bradesco_autoextrato.py`. Ele pode ser executado diretamente no terminal, digitando o seguinte comando:
-```shell
-python bradesco_autoextrato/bradesco_autoextrato.py
-```
-Ou você pode executá-lo usando o Airflow. Para isso, basta importar o DAG `bradesco_autoextrato_dag.py` localizado na pasta `dags/` do projeto no seu ambiente Airflow. Certifique-se de que as dependências do projeto estejam instaladas no ambiente Airflow antes de executá-lo.
-
-### 5. Monitorando a execução do script
-O script salvará os extratos no caminho especificado na variável de ambiente `DOWNLOAD_PATH`. Além disso, ele também registrará todas as atividades em um arquivo de log, localizado em `logs/bradesco_autoextrato.log`.
-
-Você pode monitorar a execução do script verificando o arquivo de log ou verificando o status de execução do DAG no Airflow. Se o DAG não estiver sendo executado corretamente, verifique as configurações de ambiente e certifique-se de que as dependências do projeto estejam instaladas corretamente.
